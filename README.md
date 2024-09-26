@@ -56,16 +56,22 @@ Flow
 
 2. Pub/Sub(Fanout)
 
-    -- This work will required Exchange to introduce
-    
-    -- Producer will send the message to the exchange without any routing key
+   -- This work will required Exchange to introduce
 
-    -- Consumer will subscribe to the exchange with queue and will get all the message
+   -- Producer will send the message to the exchange without any routing key
+
+   -- Consumer will subscribe to the exchange with queue and will get all the message
 
 3. Routing(Direct)-->store different log in different server
 
-    -- Here Producer will send message to the exchange with exchangeName and routing key
+   -- Here Producer will send message to the exchange with exchangeName and routing key
 
-    -- Consumer will subscribe exchange with a routing key.
-    
-    -- Consumer will get the message only if the routing key matches
+   -- Consumer will subscribe exchange with a routing key.
+
+   -- Consumer will get the message only if the routing key matches
+
+4. Topics:
+
+   -- Producer will send message to the exchange with exchangeName and routing key
+   
+   -- Consumer will subscribe exchange with a routing key and a topic
